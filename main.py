@@ -1,2 +1,2 @@
-def clicl()
+def clic()
     
