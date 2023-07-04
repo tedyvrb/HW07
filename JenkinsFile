@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+
+    triggers {
+        cron('H/30 * * * *')
+    }
+
+    stages {
+        stage('MySoftware') {
+            steps {
+                dir("C:\\Users\\user\\Downloads\\Export\\Garbage\\MySoftware") {
+                   git 'https://github.com/tedyvrb/HW07'
+                }
+            }
+        }
+
+        
+    }
+}
